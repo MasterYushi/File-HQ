@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="./styles.css" rel="stylesheet">
+
+  <title>Fyle Assignment</title>
+</head>
+
+<body>
+
+  <div class="modal fade" id="contact-modal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-3">
+        <div class="modal-header border-0 pb-0">
+          <h5 class="modal-title">Talk to us</h5>
+        </div>
+        <div class="modal-body">
+          <form class="row gx-5 needs-validation" method="POST"
+            action="https://getform.io/f/467575c0-3432-4a22-b51c-3aea7ea5b27d" novalidate>
+            <div class="col-12 mb-3">
+              <div class="form-floating">
+                <input class="form-control" type="email" name="email" id="email" placeholder="Work email*" required>
+                <div class="invalid-feedback">
+                  Please enter a valid email
+                </div>
+                <label for="email">Work email*</label>
+              </div>
+            </div>
+            <div class="col-6 mb-5">
+              <div class="form-floating">
+                <input class="form-control" type="text" name="first-name" id="first-name" placeholder="First name*"
+                  required>
+                <label for="first-name">First name*</label>
+              </div>
+              <div class="invalid-feedback">
+                Please enter your first name
+              </div>
+            </div>
+            <div class="col-6 mb-5">
+              <div class="form-floating">
+                <input class="form-control" type="text" name="last-name" id="last-name" placeholder="Last name*"
+                  required>
+                <label for="last-name">Last name*</label>
+              </div>
+              <div class="invalid-feedback">
+                Please enter your last name
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="agree-tnc" required>
+                <label class="form-check-label" for="agree-tnc">
+                  I agree to Fyle's terms and conditions, and provide consent to send me communication.
+                </label>
+                <div class="invalid-feedback">
+                  You must agree to our terms and conditions before continuing.
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Contact Us</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="hero row g-0 pad-lr">
+    <div class="hero__intro col d-flex flex-column justify-content-center align-items-start">
+      <h3 class="section-subtitle">Award winning</h3>
+      <h1 class="section-title">Digital marketing agency</h1>
+      <p class="section-description">Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque vitae
+        ante at elit fringilla ac at purus, Morbi sed lacus nec risus finibus feugiat et fermentum
+      </p>
+      <button class="btn btn-primary cta" data-bs-toggle="modal" data-bs-target="#contact-modal">Contact Us</button>
+    </div>
+    <div class="hero__img col-6"><img src="./img/hero.png" alt="woman sculpting figures"></div>
+  </section>
+
+  <section class="what_we_do g-0 row">
+    <div class="what_we_do__intro col-12 mb-5  pad-l">
+      <div class="row">
+        <div class="col-lg-4 ">
+          <h3 class="section-subtitle" data-aos="fade-right">What we do</h3>
+          <h1 class="section-title" data-aos="fade-right">Services provided for you</h1>
+        </div>
+        <div class="col-lg-4 offset-lg-1 d-flex align-items-end" data-aos="fade-left">
+          <p class="section-description">Morbi sed lacus nec risus finibus
+            feugiat et fermentum
+            nibh. Pellentesque vitae
+            ante at elit fringilla ac at purus, Morbi sed lacus nec risus finibus feugiat et fermentum
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="what_we_do__carousel col-12  pad-l" data-aos='slide-left' data-aos-duration='800'
+      data-aos-easing='ease-out-quad'>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./img/c-1.jpg" alt="">
+            <div class="overlay">
+              <img src="./img/c-icon-1.svg" alt="">
+              <h6>Web development</h6>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, sed.</p>
+              <button class="btn btn-overlay">Read more
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 37 10">
+                  <defs>
+                    <style>
+                      .a {
+                        fill: #ff3147;
+                      }
+                    </style>
+                  </defs>
+                  <g transform="translate(-352 -742)">
+                    <path class="a" d="M5,0l5,8H0Z" transform="translate(389 742) rotate(90)" />
+                    <rect class="a" width="29" height="2" transform="translate(352 746)" />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/c-2.jpg" alt="">
+            <div class="overlay">
+              <img src="./img/c-icon-1.svg" alt="">
+              <h6>Web development</h6>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, sed.</p>
+              <button class="btn btn-overlay">Read more
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 37 10">
+                  <defs>
+                    <style>
+                      .a {
+                        fill: #ff3147;
+                      }
+                    </style>
+                  </defs>
+                  <g transform="translate(-352 -742)">
+                    <path class="a" d="M5,0l5,8H0Z" transform="translate(389 742) rotate(90)" />
+                    <rect class="a" width="29" height="2" transform="translate(352 746)" />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/c-3.jpg" alt="">
+            <div class="overlay">
+              <img src="./img/c-icon-1.svg" alt="">
+              <h6>Web development</h6>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, sed.</p>
+              <button class="btn btn-overlay">Read more
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 37 10">
+                  <defs>
+                    <style>
+                      .a {
+                        fill: #ff3147;
+                      }
+                    </style>
+                  </defs>
+                  <g transform="translate(-352 -742)">
+                    <path class="a" d="M5,0l5,8H0Z" transform="translate(389 742) rotate(90)" />
+                    <rect class="a" width="29" height="2" transform="translate(352 746)" />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/c-4.jpg" alt="">
+            <div class="overlay">
+              <img src="./img/c-icon-1.svg" alt="">
+              <h6>Web development</h6>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, sed.</p>
+              <button class="btn btn-overlay">Read more
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 37 10">
+                  <defs>
+                    <style>
+                      .a {
+                        fill: #ff3147;
+                      }
+                    </style>
+                  </defs>
+                  <g transform="translate(-352 -742)">
+                    <path class="a" d="M5,0l5,8H0Z" transform="translate(389 742) rotate(90)" />
+                    <rect class="a" width="29" height="2" transform="translate(352 746)" />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/c-5.jpg" alt="">
+            <div class="overlay">
+              <img src="./img/c-icon-1.svg" alt="">
+              <h6>Web development</h6>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, sed.</p>
+              <button class="btn btn-overlay">Read more
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 37 10">
+                  <defs>
+                    <style>
+                      .a {
+                        fill: #ff3147;
+                      }
+                    </style>
+                  </defs>
+                  <g transform="translate(-352 -742)">
+                    <path class="a" d="M5,0l5,8H0Z" transform="translate(389 742) rotate(90)" />
+                    <rect class="a" width="29" height="2" transform="translate(352 746)" />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/c-6.jpg" alt="">
+            <div class="overlay">
+              <img src="./img/c-icon-1.svg" alt="">
+              <h6>Web development</h6>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, sed.</p>
+              <button class="btn btn-overlay">Read more
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 37 10">
+                  <defs>
+                    <style>
+                      .a {
+                        fill: #ff3147;
+                      }
+                    </style>
+                  </defs>
+                  <g transform="translate(-352 -742)">
+                    <path class="a" d="M5,0l5,8H0Z" transform="translate(389 742) rotate(90)" />
+                    <rect class="a" width="29" height="2" transform="translate(352 746)" />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/c-7.jpg" alt="">
+            <div class="overlay">
+              <img src="./img/c-icon-1.svg" alt="">
+              <h6>Web development</h6>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, sed.</p>
+              <button class="btn btn-overlay">Read more
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 37 10">
+                  <defs>
+                    <style>
+                      .a {
+                        fill: #ff3147;
+                      }
+                    </style>
+                  </defs>
+                  <g transform="translate(-352 -742)">
+                    <path class="a" d="M5,0l5,8H0Z" transform="translate(389 742) rotate(90)" />
+                    <rect class="a" width="29" height="2" transform="translate(352 746)" />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/c-8.jpg" alt="">
+            <div class="overlay">
+              <img src="./img/c-icon-1.svg" alt="">
+              <h6>Web development</h6>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, sed.</p>
+              <button class="btn btn-overlay">Read more
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 37 10">
+                  <defs>
+                    <style>
+                      .a {
+                        fill: #ff3147;
+                      }
+                    </style>
+                  </defs>
+                  <g transform="translate(-352 -742)">
+                    <path class="a" d="M5,0l5,8H0Z" transform="translate(389 742) rotate(90)" />
+                    <rect class="a" width="29" height="2" transform="translate(352 746)" />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/c-9.jpg" alt="">
+            <div class="overlay">
+              <img src="./img/c-icon-1.svg" alt="">
+              <h6>Web development</h6>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, sed.</p>
+              <button class="btn btn-overlay">Read more
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 37 10">
+                  <defs>
+                    <style>
+                      .a {
+                        fill: #ff3147;
+                      }
+                    </style>
+                  </defs>
+                  <g transform="translate(-352 -742)">
+                    <path class="a" d="M5,0l5,8H0Z" transform="translate(389 742) rotate(90)" />
+                    <rect class="a" width="29" height="2" transform="translate(352 746)" />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why_choose_us row g-0 pad-lr">
+    <div class="why_choose_us__intro col-12" data-aos="fade-in">
+      <h3 class="section-subtitle">Why choose us</h3>
+      <h1 class="section-title">Why we are best</h1>
+    </div>
+    <div class="why_choose_us__reasons col-12">
+      <div class="row gx-5">
+        <div class="reason col-lg-3 col-sm-6" data-aos="fade-right">
+          <img src="./img/r-1.svg" alt="">
+          <h5 class="reason__heading">Clarified vision & target</h5>
+          <p class="reason__desc">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, vitae!
+          </p>
+        </div>
+        <div class="reason col-lg-3 col-sm-6" data-aos="fade-right">
+          <img src="./img/r-2.svg" alt="">
+          <h5 class="reason__heading">High performance</h5>
+          <p class="reason__desc">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, vitae!
+          </p>
+        </div>
+        <div class="reason col-lg-3 col-sm-6" data-aos="fade-left">
+          <img src="./img/r-3.svg" alt="">
+          <h5 class="reason__heading">Maintain security</h5>
+          <p class="reason__desc">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, vitae!
+          </p>
+        </div>
+        <div class="reason col-lg-3 col-sm-6" data-aos="fade-left">
+          <img src="./img/r-4.svg" alt="">
+          <h5 class="reason__heading">Better strategy and quality</h5>
+          <p class="reason__desc">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, vitae!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="our_project row g-0 pad-lr">
+    <div class="our_project__intro col-12" data-aos="fade-down">
+      <h3 class="section-subtitle">Our project</h3>
+      <h1 class="section-title">Why we are best</h1>
+    </div>
+    <div class="col-12">
+      <div class="row projects-section g-0">
+        <div class="project-img col-md-8" data-aos="fade-right">
+          <img src="./img/c-3.jpg" alt="">
+        </div>
+        <div class="projects col-md-4 d-flex flex-column justify-content-evenly mt-md-0 mt-4" data-aos="fade-left">
+          <div class="active-slider"></div>
+          <div class="project active" data-img="./img/c-3.jpg">
+            <h5 class="project-title">Genderless kei - japan's hot</h5>
+            <p class="project-desc">
+              Set to launch on the manufacturer's new A330neo aircraft in 2017, its offering lots of
+            </p>
+          </div>
+          <div class="project" data-img="./img/c-5.jpg">
+            <h5 class="project-title">Better Strategy & quality</h5>
+            <p class="project-desc">
+              Set to launch on the manufacturer's new A330neo aircraft in 2017, its offering lots of
+            </p>
+          </div>
+          <div class="project" data-img="./img/c-2.jpg">
+            <h5 class="project-title">Genderless kei - japan's hot</h5>
+            <p class="project-desc">
+              Set to launch on the manufacturer's new A330neo aircraft in 2017, its offering lots of
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="growth row g-0 pad-lr">
+    <div class="growth__intro col-12" data-aos="fade-down">
+      <h3 class="section-subtitle">Expert's growths</h3>
+      <h1 class="section-title">Our company growth</h1>
+    </div>
+    <div class="growth_counts col-12 mt-5" data-aos="zoom-in-down">
+      <div class="growth_count py-5"><img src="./img/g-1.svg" alt="heart"><span class="count">199+</span><span
+          class="desc">Satisfied customers</span></div>
+      <div class="growth_count py-5"><img src="./img/g-2.svg" alt="clock"><span class="count">1591+</span><span
+          class="desc">Days of operation</span></div>
+      <div class="growth_count py-5"><img src="./img/g-3.svg" alt="checkmark"><span class="count">283+</span><span
+          class="desc">Completed projects</span></div>
+      <div class="growth_count py-5"><img src="./img/g-4.svg" alt="trophy"><span class="count">75+</span><span
+          class="desc">Awards won</span></div>
+    </div>
+  </section>
+
+  <section class="feedback row g-0 pad-lr justify-content-center" data-aos="fade-down">
+    <div class="growth__intro col-12">
+      <h3 class="section-subtitle">Client's feedback</h3>
+      <h1 class="section-title">People say about us</h1>
+    </div>
+    <div class="col-md-8">
+      <p class="quote">Jannat Tumpa The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those
+        interested.
+        Sections Bonorum et Malorum original.
+      </p>
+      <p>
+        <span class="author">Jannat Tumpa</span>
+        <span class="designation"> - COO, AMERIMAR ENTERPRISES, INC.</span>
+      </p>
+    </div>
+  </section>
+
+  <footer class="row g-0 align-content-center">
+    <img src="./img/logo-group.png" alt="" class="logo-group">
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+  </script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>

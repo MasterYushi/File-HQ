@@ -1,0 +1,430 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 576px) {
+  body {
+    font-size: 80%;
+  }
+}
+img {
+  max-width: 100%;
+}
+
+section {
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+}
+
+.pad-lr {
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+.pad-l {
+  padding-left: 10rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .pad-lr {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .pad-l {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .pad-lr {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .pad-l {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+.section-subtitle,
+.section-title {
+  text-transform: uppercase;
+}
+
+.section-subtitle {
+  color: #FF3147;
+  font-size: 1.25em;
+  font-weight: 500;
+}
+
+.section-title {
+  font-size: 2.75em;
+  font-weight: 700;
+  margin-bottom: 1.75rem;
+}
+
+.section-description {
+  font-size: 1em;
+  font-weight: 400;
+  max-width: 55ch;
+}
+
+.btn-primary {
+  margin-top: 2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 0;
+  border: 0;
+  background-color: #FF3147;
+  padding: 0.75rem 1.5rem;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #e92539;
+}
+
+.btn-primary:focus,
+.btn-primary:active {
+  outline: 2px solid #e92539;
+  outline-offset: 2px;
+  box-shadow: none !important;
+}
+
+.hero__intro .section-subtitle {
+  font-size: 1.5em;
+}
+.hero__intro .section-title {
+  font-size: 3em;
+}
+
+@media screen and (max-width: 992px) {
+  .hero__img {
+    display: none;
+  }
+}
+.what_we_do {
+  background-color: #FAFAFA;
+}
+
+.what_we_do__intro .section-description {
+  margin-bottom: 1.75rem;
+}
+
+.why_choose_us .section-title {
+  margin-bottom: 4rem;
+}
+.why_choose_us__reasons .reason {
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.why_choose_us__reasons .reason h5 {
+  font-size: 1.2rem;
+}
+.why_choose_us__reasons .reason img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 992px) {
+  .why_choose_us .section-subtitle,
+.why_choose_us .section-title,
+.our_project .section-subtitle,
+.our_project .section-title,
+.growth .section-subtitle,
+.growth .section-title,
+.feedback .section-subtitle,
+.feedback .section-title {
+    text-align: center;
+  }
+}
+
+.our_project .project-img {
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.our_project .project-img img {
+  width: 100%;
+  height: 550px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.our_project .projects {
+  height: 550px;
+  position: relative;
+}
+.our_project .projects .active-slider {
+  position: absolute;
+  width: calc(100% - 2rem);
+  height: 33%;
+  top: 0%;
+  left: 2rem;
+  background-color: #FF3147;
+  z-index: -1;
+  transition: top 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+@media screen and (max-width: 768px) {
+  .our_project .projects .active-slider {
+    left: 0;
+    width: 100%;
+  }
+}
+.our_project .project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  margin-left: 2rem;
+  font-size: 0.9em;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.5s ease;
+}
+.our_project .project .project-title {
+  text-transform: capitalize;
+  pointer-events: none;
+}
+.our_project .project .project-desc {
+  pointer-events: none;
+}
+.our_project .project.active {
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  .our_project .project {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .our_project .projects-section {
+    height: auto;
+  }
+  .our_project .project-img {
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .our_project .project-img img {
+    width: 100%;
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+.growth {
+  background-color: #fafafa;
+}
+.growth .growth_counts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+.growth .growth_count {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  flex-basis: 25%;
+  gap: 1rem;
+  align-items: center;
+  background-color: white;
+  aspect-ratio: 1/1;
+  transition: box-shadow 0.5s ease;
+}
+.growth .growth_count:hover {
+  box-shadow: 3px 6px 20px #672C2C1F;
+}
+.growth .growth_count .count {
+  font-size: 2.5em;
+}
+.growth .growth_count .desc {
+  font-weight: 400;
+  font-size: 1.1em;
+}
+
+.feedback .author {
+  text-transform: uppercase;
+  color: #FF3147;
+  font-weight: 700;
+}
+.feedback .designation {
+  font-weight: 300;
+  color: #808080;
+}
+
+footer {
+  background-color: #FF3147;
+  height: 200px;
+}
+footer img {
+  height: 25%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#contact-modal .modal-content {
+  border: 0;
+  border-radius: 0;
+}
+#contact-modal .modal-title {
+  font-weight: 600;
+  font-size: 1.5em;
+}
+#contact-modal form input:not([type=checkbox]) {
+  border-radius: 0;
+  border: 0;
+  border-bottom: 1px solid #6F718F99;
+  padding-left: 0;
+}
+#contact-modal form input:not([type=checkbox]):focus {
+  box-shadow: none;
+}
+#contact-modal form input:not([type=checkbox]):focus ~ label {
+  opacity: 1;
+  transform: scale(0.85) translateY(-1.5rem) translateX(0);
+}
+#contact-modal form input:not([type=checkbox]):not(:-moz-placeholder-shown) ~ label {
+  opacity: 1;
+  transform: scale(0.85) translateY(-1.5rem) translateX(0);
+}
+#contact-modal form input:not([type=checkbox]):not(:-ms-input-placeholder) ~ label {
+  opacity: 1;
+  transform: scale(0.85) translateY(-1.5rem) translateX(0);
+}
+#contact-modal form input:not([type=checkbox]):not(:placeholder-shown) ~ label {
+  opacity: 1;
+  transform: scale(0.85) translateY(-1.5rem) translateX(0);
+}
+#contact-modal form label {
+  color: #6F718F99;
+  top: 40%;
+  padding: 0;
+  transition: transform 0.3s;
+}
+#contact-modal form input[type=checkbox] ~ label {
+  color: #616678;
+}
+#contact-modal form .form-check-input {
+  border: 2px solid #FF3147;
+  cursor: pointer;
+}
+#contact-modal form .form-check-input:focus {
+  box-shadow: none;
+}
+#contact-modal form .form-check-input:checked {
+  background-color: #FF3147;
+}
+#contact-modal form button {
+  border-radius: 5px;
+  width: 100%;
+  margin: 0.8rem auto;
+  text-transform: capitalize;
+}
+
+.swiper-container {
+  height: 450px;
+}
+
+.swiper-slide {
+  background-color: #FF3147;
+  height: 90%;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+}
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.swiper-slide .overlay {
+  z-index: 600;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #FF3147;
+  color: white;
+  transition: top 1s ease;
+}
+.swiper-slide .overlay > * {
+  margin-top: 2rem;
+}
+.swiper-slide .overlay h6 {
+  text-transform: uppercase;
+  font-size: 1.25em;
+  font-weight: 400;
+}
+.swiper-slide .overlay img {
+  width: 45px;
+  height: 45px;
+}
+.swiper-slide .overlay * {
+  opacity: 0;
+  transition: opacity 0.5s ease 0s;
+  pointer-events: none;
+}
+.swiper-slide .overlay .btn-overlay {
+  background-color: white;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 0.8em;
+  padding: 0.8rem 1.75rem;
+  color: #FF3147;
+}
+.swiper-slide:hover .overlay {
+  top: 0;
+}
+.swiper-slide:hover .overlay * {
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.5s ease 0.25s;
+}
+
+.swiper-pagination {
+  text-align: left;
+  margin-left: 5px;
+}
+
+.swiper-pagination-bullet {
+  opacity: 1;
+  margin-right: 1.25rem !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #FF3147;
+  position: relative;
+}
+.swiper-pagination-bullet-active::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 1px solid #FF3147;
+}
